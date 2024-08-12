@@ -1,0 +1,175 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #c8ebca;
+    position: relative; 
+}
+.opcoesDivEditar{
+display: flex;
+}
+#voltar {
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+    position: absolute; 
+    margin: 8px;
+    top: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    background-color: #6bb678ec;
+    background-image: url(../imagens/seta-apontando-para-a-esquerda.png);
+    border-radius: 1.5px;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 1.5px;
+}
+
+#novoProduto {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #b6e7b9;
+}
+
+#titulo {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#opcoesSaireAdicionar {
+    text-align: center;
+}
+.opcoesNovoProduto{
+    border: none;
+    background-color: #73c883ec;
+    border-radius: 2.7px;
+    height: 40px;
+    width: 115px;
+   cursor: pointer;
+   font-size: 13px;
+   text-align: center;
+}
+.opcoes {
+    cursor: pointer;
+    margin-top: 16px;
+    border: none;
+    background-color: #73c883ec;
+    border-radius: 2.7px;
+    height: 40px;
+    width: 110px;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+
+ul {
+    list-style: disc;
+}
+
+input {
+    width: 200px;
+    height: 25px;
+    border-radius: 4px;
+    font-size: 13px;
+    border-width: 1px;
+}
+
+select {
+    cursor: pointer;
+    width: 140px;
+    height: 26px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+p {
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.opcoesProdutoLi {
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+    background-color: #73c883ec;
+    border-radius: 1.7px;
+    height: 35px;
+    width: 85px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 3px;
+    font-size: 12px;
+}
+
+#deletar {
+    margin-left: 5px;
+}
+
+li {
+    font-size: 16px;
+}
+
+.opcoesEditar {
+    cursor: pointer;
+    border: none;
+    background-color: #6bb678ec;
+    border-radius: 1.7px;
+    height: 30px;
+    width: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 3px;
+    font-size: 10px;
+}
+
+.opcoesNovoProduto:hover,
+.opcoes:hover,
+.opcoesProdutoLi:hover,
+.opcoesEditar:hover,
+#voltar:hover {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.produtosDisponiveis {
+    display: none;
+}
+
+#voltar {
+    text-align: right;
+    height: 32px;
+    width: 32px;
+    background-color: #6bb678ec;
+    background-image: url(../imagens/seta-apontando-para-a-esquerda.png);
+}
