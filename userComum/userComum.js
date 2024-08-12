@@ -86,7 +86,7 @@ class Produto {
             window.alert(produto.mostrarDetalhes())
         })}
 
-        function redirecionar(div){
+        function redirecionar(div, produto){
             let btCtt = document.createElement('button')
             btCtt.classList.add('ctt');
             div.appendChild(btCtt);
@@ -111,7 +111,7 @@ class Produto {
             }
             let divBotoes = criarDivBotoes()
             mostrarDetalhesProduto(divBotoes, produto);
-            redirecionar(divBotoes);
+            redirecionar(divBotoes, produto);
             produto.id = doc.id;
             let divProduto = document.createElement('div');
             divProduto.textContent = produto.getNome();
