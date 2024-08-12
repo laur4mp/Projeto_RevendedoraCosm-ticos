@@ -10,6 +10,8 @@ body {
     flex-wrap: wrap;
     padding: 16px;
     justify-items: flex-start;
+     margin-left: 60px;
+    margin-right: 60px;
 }
 .produtoItem {
     margin: 12px;
