@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    font-family: Arial, sans-serif;
+    background-color: #c8ebca;
+}
+#produtosDisponiveis{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    justify-items: flex-start;
+}
+.produtoItem {
+    margin: 12px;
+    text-align: center;
+    background-color: #b6e7b9;
+    border: 1px solid #aeddb1; 
+    border-radius: 8px; 
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    width: 200px; 
+    height: 150px;
+    box-sizing: border-box;
+    padding: auto;
+    font-size: 16px;
+}
+.produtoItem:hover{
+    background-color: white;
+    border: 1px solid #aeddb1; 
+}
+.ctt{
+    background-image: url('../imagens/icon-ctt.png');
+    width: 40px;
+    height: 40px;
+    margin-top: 16px;
+    border: none;
+    background-color: #73c883ec;
+    border-radius: 2.7px;
+    margin-left: 4px;
+}
+.btDetalhes {
+    cursor: pointer;
+    margin-top: 16px;
+    border: none;
+    background-color: #73c883ec;
+    border-radius: 2.7px;
+    height: 40px;
+    width: 90px;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+.divBotoes{
+    margin-top: 5px;
+    display: inline-flex;
+}
+.produtoItem button:hover {
+    background-color:  #b6e7b9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+#voltar:hover{
+    background-color:  white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.opcoes {
+    cursor: pointer;
+    margin-top: 16px;
+    border: none;
+    background-color: #73c883ec;
+    border-radius: 2.7px;
+    height: 40px;
+    width: 110px;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+p{
+    font-size: 14px;
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+}
+#voltar{
+    background-color:  #73c883ec;
+    background-image: url('../imagens/seta-apontando-para-a-esquerda.png');
+    width: 32px;
+    height: 32px;
+    border-radius: 1.5px;
+}

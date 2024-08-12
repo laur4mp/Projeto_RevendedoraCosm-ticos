@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revendedora Cosméticos</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-auth-compat.js"></script>
+    <link rel="shortcut icon" href="../imagens/images.png" />
+</head>
+<body>
+    <a href="../index.html" ><button id="voltar"></button></a>
+    <h1 id="titulo">Controle de Estoque - Cosméticos</h1>
+    
+   <div id="novoProduto">
+    <form action="">
+            <p>Nome do produto: <input type="text" id="nome" required></p>
+            <p>Preço de revenda R$: <input type="number" id="valor" required></p>
+            <p>Quantidade Disponível: <input type="number" name="" id="quantidade"></p>
+
+            <p>Tamanho: <input type="number" id="tamanho" >
+            <select name="" id="consistencia" >
+            <option value="liquido">ml</option>
+            <option value="solido">g</option></select></p>
+            <p>Descrição: <input type="text" name="" id="descricao"></p>
+            <div id="opcoesSaireAdicionar">
+                <p><input type="button" value="Adicionar Produto" class="opcoesNovoProduto add" onclick="addproduto()">
+                <input type="button" value="Cancelar" class="opcoesNovoProduto sair" onclick="sairAddProdto()"></p>
+            </div>
+    </form>
+    </div>
+
+<h3>Produtos Disponíveis:</h3>
+<br>
+<ul id="listaProdutos"></ul>
+<button id="opcoes" class="opcoes" onclick="aparecerAddproduto()" >Adicionar Novo Produto</button>
+</body>
+<script src="admin.js"></script>
+</html>
