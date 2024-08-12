@@ -89,9 +89,11 @@ class Produto {
             let btCtt = document.createElement('button')
             btCtt.classList.add('ctt');
             div.appendChild(btCtt);
+            let celular = 55338812-0169;
+            let mensagem = 'Tenho interesse em um produto! gostaria de conversar sobre o produto: '
             document.getElementById('produtosDisponiveis').appendChild(div);
             btCtt.addEventListener( 'click', ()=>{
-           window.location.href = 'https://w.app/YHxGV5'
+            window.open(https://wa.me/${celular}?text=${mensagem} ${produto.getNome()}, "_blank")
         })}
     
     window.onload = function() { 
