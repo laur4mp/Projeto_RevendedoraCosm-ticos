@@ -85,15 +85,18 @@ class Produto {
         btdetalhes.addEventListener( 'click', ()=>{
             window.alert(produto.mostrarDetalhes())
         })}
+
         function redirecionar(div){
             let btCtt = document.createElement('button')
             btCtt.classList.add('ctt');
             div.appendChild(btCtt);
-            let celular = 55338812-0169;
+            let celular = '553388120169';
             let mensagem = 'Tenho interesse em um produto! gostaria de conversar sobre o produto: '
             document.getElementById('produtosDisponiveis').appendChild(div);
+            
             btCtt.addEventListener( 'click', ()=>{
-            window.open('https://wa.me/${celular}?text=${mensagem} ${produto.getNome()}, "_blank"')
+            let url = `https://wa.me/${celular}?text=${encodeURIComponent(mensagem)}${encodeURIComponent(produto.getNome())}`;
+             window.open(url, "_blank");
         })}
     
     window.onload = function() { 
