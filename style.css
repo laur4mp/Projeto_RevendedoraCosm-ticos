@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #c8ebca;
+}
+
+.sair {
+    margin-left: 30px;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #b6e7b9;
+}
+
+#titulo {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.opcoesLogin{
+    border: none;
+    background-color: #73c883ec;
+    border-radius: 2.7px;
+    height: 40px;
+    width: 115px;
+   cursor: pointer;
+   font-size: 13px;
+   text-align: center;
+}
+.opcoes {
+    cursor: pointer;
+    margin: 5px;
+    border: none;
+    background-color: #73c883ec;
+    border-radius: 2.7px;
+    height: 40px;
+    width: 150px;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+input {
+    width: 200px;
+    height: 25px;
+    border-radius: 4px;
+    font-size: 13px;
+    border-width: 1px;
+}
+
+p {
+    font-size: 14px;
+}
+h3{
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 30px;
+}
+#opcoesLogin{
+    text-align: center;
+}
+.opcoes:hover {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
