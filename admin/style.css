@@ -9,7 +9,17 @@ body {
     background-color: #c8ebca;
     position: relative; 
 }
+.opcoesNovoProduto{
+    border: none;
+    background-color: #73c883ec;
+    border-radius: 2.7px;
+    height: 40px;
+    width: 115px;
+   cursor: pointer;
+   font-size: 13px;
+   text-align: center;
 
+}
 #voltar {
     width: 32px;
     height: 32px;
